@@ -10,6 +10,37 @@ namespace src_HeroopQuest.GameClasses
     }
     class Held
     {
+        public Held(HeldType type, string naam)
+        {
+            Naam = naam;
+            HeldType = type;
+            switch (type)
+            {
+                case HeldType.Barbaar:
+                    AanvalDobbestenen = 3;
+                    MaxIntelligentie = 2;
+                    MaxLichaam = 8;
+                    break;
+                case HeldType.Dwerg:
+                    MaxIntelligentie = 3;
+                    MaxLichaam = 7;
+                    break;
+                case HeldType.Elf:
+                    MaxIntelligentie = 4;
+                    MaxLichaam = 6;
+                    break;
+                case HeldType.Tovenaar:
+                    AanvalDobbestenen = 1;
+                    MaxIntelligentie = 6;
+                    MaxLichaam = 4;
+                    break;
+                default:
+                    break;
+            }
+            HuidigInteligentie = MaxIntelligentie;
+            HuidigLichaam = MaxLichaam;
+        }
+
         public string Naam { get; set; }
         public int HuidigInteligentie { get; set; }
         public int HuidigLichaam { get; set; }
