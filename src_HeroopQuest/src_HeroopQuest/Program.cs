@@ -1,4 +1,5 @@
 ﻿using src_HeroopQuest.GameClasses;
+using src_HeroopQuest.Properties;
 using System;
 
 namespace src_HeroopQuest
@@ -12,6 +13,7 @@ namespace src_HeroopQuest
 
             Console.WriteLine(held1.Naam);
             Console.WriteLine(held1.HeldType);
+            Console.WriteLine(Resources.barbaarTekst);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using src_HeroopQuest.Properties;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -17,19 +18,23 @@ namespace src_HeroopQuest.GameClasses
             switch (type)
             {
                 case HeldType.Barbaar:
+                    Beschrijving = Resources.barbaarTekst;
                     AanvalDobbestenen = 3;
                     MaxIntelligentie = 2;
                     MaxLichaam = 8;
                     break;
                 case HeldType.Dwerg:
+                    Beschrijving = Resources.dwergTekst;
                     MaxIntelligentie = 3;
                     MaxLichaam = 7;
                     break;
                 case HeldType.Elf:
+                    Beschrijving = Resources.elfTekst;
                     MaxIntelligentie = 4;
                     MaxLichaam = 6;
                     break;
                 case HeldType.Tovenaar:
+                    Beschrijving = Resources.tovenaarTeskt;
                     AanvalDobbestenen = 1;
                     MaxIntelligentie = 6;
                     MaxLichaam = 4;
