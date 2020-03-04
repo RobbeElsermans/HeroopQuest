@@ -28,6 +28,10 @@ namespace src_HeroopQuest
             {
                 deHelden[i].ToonFiche();
             }
+            foreach (var held in deHelden)
+            {
+                held.ToonFiche();
+            }
             //heldlijst creëren en als resultaat terug geven
         }
     }
