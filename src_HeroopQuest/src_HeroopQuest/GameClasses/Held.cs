@@ -57,5 +57,16 @@ namespace src_HeroopQuest.GameClasses
         public int AanvalDobbestenen { get; private set; } = 2;
         public int Verdediging { get; private set; } = 2;
         public int LoopDobbelstenen { get; private set; } = 2;
+
+        public void ToonFiche()
+        {
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine($"\t\t{Naam} de {HeldType}");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"{Beschrijving}");
+            Console.ResetColor();
+            Console.WriteLine($"\tlichaampunten: \t{HuidigLichaam}/{MaxLichaam}");
+            Console.WriteLine($"\tintelligentie: \t{HuidigInteligentie}/{MaxIntelligentie}");
+        }
     }
 }
